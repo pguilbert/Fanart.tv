@@ -1,4 +1,4 @@
-﻿using Fanart;
+﻿using Fanart.tv;
 using System;
 using System.Collections.Generic;
 using System.IO;

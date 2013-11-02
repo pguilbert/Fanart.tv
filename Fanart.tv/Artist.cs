@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Fanart
+namespace Fanart.tv
 {
     public class Artist
     {
@@ -38,21 +38,8 @@ namespace Fanart
 
         public string artistname { get; set; }
         public Guid mb_id { get; set; }
-        public List<ArtistThumb> artistthumb { get; set; }
-        public List<ArtistBackground> artistbackground { get; set; }
+        public List<Image> artistthumb { get; set; }
+        public List<Image> artistbackground { get; set; }
     }
 
-    public class ArtistThumb
-    {
-        public int id { get; set; }
-        public string url { get; set; }
-        public int likes { get; set; }
-    }
-
-    public class ArtistBackground
-    {
-        public int id { get; set; }
-        public string url { get; set; }
-        public int likes { get; set; }
-    }
 }
