@@ -22,18 +22,27 @@ namespace Fanart.tv
         {
             string ApiUrl = "http://api.fanart.tv/webservice/artist/" + fanart_api_key + "/" + musicbrainz_mbid + "/";
 
-            WebClient client = new WebClient();
-            string data = client.DownloadString(ApiUrl);
-
-            Dictionary<string, Artist> artists = JsonConvert.DeserializeObject<Dictionary<string, Artist>>(data);
-
-            foreach (KeyValuePair<string, Artist> kvp in artists)
+            try
             {
-                kvp.Value.artistname = kvp.Key;
-                return kvp.Value;
-            }
+                WebClient client = new WebClient();
+                string data = client.DownloadString(ApiUrl);
 
-            return null;
+                Dictionary<string, Artist> artists = JsonConvert.DeserializeObject<Dictionary<string, Artist>>(data);
+
+                foreach (KeyValuePair<string, Artist> kvp in artists)
+                {
+                    kvp.Value.artistname = kvp.Key;
+                    return kvp.Value;
+                }
+
+                return null;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return null;
+            }
+            
         }
 
         public string artistname { get; set; }
