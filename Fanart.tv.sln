@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.20827.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanart.tv", "Fanart.tv\Fanart.tv.csproj", "{AB18E2CC-E951-46D2-8F19-7E1288F6D0DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{A014CA38-F9C6-4C68-B4DC-7CC94DAA9C1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AB18E2CC-E951-46D2-8F19-7E1288F6D0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB18E2CC-E951-46D2-8F19-7E1288F6D0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB18E2CC-E951-46D2-8F19-7E1288F6D0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A014CA38-F9C6-4C68-B4DC-7CC94DAA9C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A014CA38-F9C6-4C68-B4DC-7CC94DAA9C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A014CA38-F9C6-4C68-B4DC-7CC94DAA9C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A014CA38-F9C6-4C68-B4DC-7CC94DAA9C1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

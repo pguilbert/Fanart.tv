@@ -13,7 +13,7 @@ namespace Fanart
     public class Artist
     {
         /// <summary>
-        /// Charge les information depuis le site Fanart.tv
+        /// Charge les informations depuis le site Fanart.tv
         /// </summary>
         /// <param name="musicbrainz_mbid">mbid de l'artiste</param>
         /// <param name="fanart_api_key">Fanart.tv Api Key</param>
